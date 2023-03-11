@@ -326,14 +326,12 @@ stag = (
 "Məzarlıq, əsəb  uğruna peşman olanlarla dolu",
 "Eşq külək  kimidir görməzsən ama hiss edə bilərsən.",
 "tərəzi  var ölçü var , hərşeyin bir vaxtı var",
-
 "Yanıltmasın səni masum baxışlar, bəzılarını şeytan ayaqdə alqışlar...",
 "həyat sabahı gözləyəcək qədər uzun deyil",
 "Yaxşılar əsla itirməz , itirilir.",
 "görməzden gəldiyin sevgiyə möhtac qalman diləyiylə",
 "Kaşki ağıl vermək yerinə hüzur versəniz",
 "Heç bilmədiyim o qoxunu çox özləyirəm",
-    #Mfmf
 "𝑌𝑎𝑥𝑠̧𝚤 𝑜𝑙𝑎𝑛 𝑖𝑡𝑖𝑟𝑠𝑒𝑑𝑒 𝑞𝑎𝑧𝑎𝑛ı𝑟",
 "𝐴ş𝑖𝑞 𝑜𝑙𝑚𝑎𝑞 𝑔𝑜̈𝑧ə𝑙 𝑏𝑖𝑟 ş𝑒𝑦 𝑎𝑚𝑎 𝑠𝑎𝑑ə𝑐ə 𝑠ənə",
 "𝐻𝑒𝑐̧𝑘𝑖𝑚 ℎ𝑒𝑐̧𝑘𝑖𝑚𝑖 𝑖𝑡𝑖𝑟𝑚𝑒𝑧  𝑔𝑖𝑑ə𝑛 𝑏𝑎ş𝑞𝑎𝑠ı𝑛ı 𝑡𝑎𝑝𝑎𝑟, 𝑞𝑎𝑙𝑎𝑛 𝑜̈𝑧𝑢̈𝑛𝑢̈",
@@ -447,25 +445,6 @@ async def tag_admin(event):
     else:
         await event.reply(text)
     raise StopPropagation
-
-#@client.on(events.NewMessage(pattern="^/admins ?(.*)"))
-#async def mentionall(tagadmin):
-
- #if tagadmin.pattern_match.group(1):
- # seasons = tagadmin.pattern_match.group(1)
- #else:
- # seasons = ""
-
- #chat = await tagadmin.get_input_chat()
- #a_=0
- #await tagadmin.delete()
-# async for i in client.iter_participants(chat, filter=cp):
-#  if a_ == 500:
-  # break
-#  a_+=5
- # await tagadmin.client.send_message(tagadmin.chat_id, "{} {}".format(i.first_name, i.id, seasons))
- # sleep(0.5)
-
 
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
