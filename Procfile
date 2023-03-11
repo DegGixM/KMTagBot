@@ -1,1 +1,1 @@
-bot: bash start
+bot: bash kmtagbot
